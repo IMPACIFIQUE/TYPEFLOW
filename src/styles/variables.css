@@ -1,0 +1,156 @@
+/* ==========================================================================
+   TypeFlow — Design tokens
+   Palette supplied in the project brief. All components consume these tokens,
+   so light/dark mode is a single source of truth.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ---- Core palette (light) ---- */
+  --bg: #f7f6fb;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f3f1fb;
+  --surface-3: #ebe8f7;
+  --border: #e6e2f1;
+  --border-strong: #cfc9e3;
+  --text: #14121c;
+  --text-soft: #3b3549;
+  --muted: #6f6a80;
+  --faint: #a09ab4;
+
+  --primary: #6d4aff;
+  --primary-hover: #5a35e8;
+  --primary-contrast: #ffffff;
+  --primary-soft: rgba(109, 74, 255, 0.1);
+  --primary-softer: rgba(109, 74, 255, 0.06);
+
+  --secondary: #0e7490;
+  --secondary-hover: #155e75;
+  --secondary-contrast: #ffffff;
+  --secondary-soft: rgba(14, 116, 144, 0.12);
+
+  --success: #16a34a;
+  --success-soft: rgba(22, 163, 74, 0.12);
+  --error: #dc2626;
+  --error-soft: rgba(220, 38, 38, 0.12);
+  --warning: #d97706;
+  --warning-soft: rgba(217, 119, 6, 0.14);
+  --info: #2563eb;
+  --info-soft: rgba(37, 99, 235, 0.12);
+
+  /* ---- Typographic scales ---- */
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.35rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: clamp(2.4rem, 5vw, 3.75rem);
+
+  /* ---- Shape & depth ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 14px 40px rgba(15, 23, 42, 0.1);
+  --shadow-lg: 0 30px 80px rgba(15, 23, 42, 0.16);
+  --shadow-primary: 0 12px 30px rgba(109, 74, 255, 0.28);
+
+  --ring: 0 0 0 4px rgba(109, 74, 255, 0.18);
+  --gradient-primary: linear-gradient(135deg, #6d4aff 0%, #963ffa 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(109, 74, 255, 0.12), rgba(14, 116, 144, 0.1));
+  --gradient-text: linear-gradient(120deg, #5a35e8 10%, #963ffa 90%);
+
+  /* Surface treatment */
+  --glass: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(230, 226, 241, 0.9);
+
+  /* Finger colours (same in both themes, tuned per theme) */
+  --finger-pinky: #ec4899;
+  --finger-ring: #f59e0b;
+  --finger-middle: #16a34a;
+  --finger-index: #2563eb;
+  --finger-thumb: #0e7490;
+
+  /* Layout */
+  --nav-height: 72px;
+  --container: 1180px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Typing area controls */
+  --typing-font-size: 1.45rem;
+  --typing-line-height: 1.85;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Softer, friendlier night palette: deep navy instead of pure black,
+     with calmer indigo, teal and rose accents that are easier on the eyes. */
+  --bg: #0f172a;
+  --bg-elevated: #131d33;
+  --surface: #182338;
+  --surface-2: #1e2a44;
+  --surface-3: #263450;
+  --border: #2b3a56;
+  --border-strong: #42557a;
+  --text: #f1f5ff;
+  --text-soft: #d7e0f2;
+  --muted: #a4b2cc;
+  --faint: #7687a6;
+
+  --primary: #8b7dff;
+  --primary-hover: #a99cff;
+  --primary-contrast: #ffffff;
+  --primary-soft: rgba(139, 125, 255, 0.18);
+  --primary-softer: rgba(139, 125, 255, 0.1);
+
+  --secondary: #2dd4bf;
+  --secondary-hover: #5eead4;
+  --secondary-contrast: #04121a;
+  --secondary-soft: rgba(45, 212, 191, 0.15);
+
+  --success: #4ade80;
+  --success-soft: rgba(74, 222, 128, 0.15);
+  --error: #fb7185;
+  --error-soft: rgba(251, 113, 133, 0.15);
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.15);
+  --info: #60a5fa;
+  --info-soft: rgba(96, 165, 250, 0.15);
+
+  --shadow-xs: 0 1px 2px rgba(3, 7, 18, 0.5);
+  --shadow-sm: 0 6px 20px rgba(3, 7, 18, 0.4);
+  --shadow-md: 0 20px 50px rgba(3, 7, 18, 0.5);
+  --shadow-lg: 0 36px 100px rgba(3, 7, 18, 0.6);
+  --shadow-primary: 0 12px 34px rgba(139, 125, 255, 0.32);
+  --ring: 0 0 0 4px rgba(139, 125, 255, 0.28);
+
+  --gradient-primary: linear-gradient(135deg, #6d4aff 0%, #963ffa 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(139, 125, 255, 0.2), rgba(45, 212, 191, 0.12));
+  --gradient-text: linear-gradient(120deg, #c4b5fd 10%, #67e8f9 90%);
+
+  --glass: rgba(15, 23, 42, 0.72);
+  --glass-border: rgba(43, 58, 86, 0.9);
+
+  /* Interactive backdrop tokens */
+  --bg-spot-primary: rgba(139, 125, 255, 0.2);
+  --bg-spot-secondary: rgba(45, 212, 191, 0.14);
+  --bg-grid-dot: rgba(196, 181, 253, 0.28);
+
+  --finger-pinky: #f472b6;
+  --finger-ring: #fbbf24;
+  --finger-middle: #4ade80;
+  --finger-index: #60a5fa;
+  --finger-thumb: #2dd4bf;
+}

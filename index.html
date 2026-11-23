@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#F7F6FB" />
+    <meta
+      name="description"
+      content="TypeFlow is an offline-first typing school: guided lessons, live WPM and accuracy analytics, finger guidance, games and daily challenges."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>TypeFlow — Learn to type in flow</title>
+    <script>
+      // Apply the saved theme before paint to avoid a light flash in dark mode.
+      (function () {
+        try {
+          var raw = window.localStorage.getItem('typeflow:settings');
+          var settings = raw ? JSON.parse(raw) : {};
+          var theme = settings.theme || 'system';
+          var dark =
+            theme === 'dark' ||
+            (theme === 'system' &&
+              window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', dark ? '#0F172A' : '#F7F6FB');
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

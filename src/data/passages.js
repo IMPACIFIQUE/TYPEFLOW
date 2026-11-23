@@ -1,0 +1,103 @@
+/** Text corpus used by tests, practice drills, games and the daily challenge. */
+
+export const COMMON_WORDS = [
+  'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'it', 'for',
+  'not', 'on', 'with', 'he', 'as', 'you', 'do', 'at', 'this', 'but', 'his',
+  'by', 'from', 'they', 'we', 'say', 'her', 'she', 'or', 'an', 'will', 'my',
+  'one', 'all', 'would', 'there', 'their', 'what', 'so', 'up', 'out', 'if',
+  'about', 'who', 'get', 'which', 'go', 'me', 'when', 'make', 'can', 'like',
+  'time', 'no', 'just', 'him', 'know', 'take', 'people', 'into', 'year',
+  'your', 'good', 'some', 'could', 'them', 'see', 'other', 'than', 'then',
+  'now', 'look', 'only', 'come', 'its', 'over', 'think', 'also', 'back',
+  'after', 'use', 'two', 'how', 'our', 'work', 'first', 'well', 'way', 'even',
+  'new', 'want', 'because', 'any', 'these', 'give', 'day', 'most', 'us', 'is',
+  'was', 'are', 'were', 'has', 'had', 'did', 'been', 'more', 'very', 'where',
+  'much', 'before', 'right', 'too', 'means', 'old', 'same', 'tell', 'does',
+  'set', 'three', 'put', 'end', 'why', 'again', 'off', 'went', 'here', 'each',
+  'between', 'both', 'under', 'never', 'while', 'might', 'great', 'small',
+  'large', 'next', 'early', 'young', 'important', 'few', 'public', 'bad',
+  'able', 'keep', 'last', 'long', 'little', 'own', 'below', 'high', 'far',
+  'really', 'life', 'hand', 'part', 'child', 'eye', 'place', 'world', 'week',
+  'case', 'point', 'company', 'number', 'group', 'problem', 'fact', 'hand',
+  'home', 'water', 'room', 'mother', 'area', 'money', 'story', 'month',
+  'book', 'job', 'word', 'business', 'issue', 'side', 'kind', 'head', 'house',
+  'service', 'friend', 'father', 'power', 'hour', 'game', 'line', 'end',
+  'member', 'law', 'car', 'city', 'community', 'name', 'team', 'minute',
+  'idea', 'kid', 'body', 'information', 'nothing', 'morning', 'reason',
+  'research', 'girl', 'guy', 'moment', 'air', 'teacher', 'force', 'education',
+]
+
+export const ADVANCED_WORDS = [
+  'rhythm', 'algorithm', 'synchronize', 'equilibrium', 'juxtapose',
+  'quizzical', 'mnemonic', 'labyrinth', 'silhouette', 'bureaucracy',
+  'conscience', 'phenomenon', 'occurrence', 'accommodate', 'millennium',
+  'perseverance', 'unnecessary', 'recommendation', 'infrastructure',
+  'extraordinary', 'simultaneously', 'communication', 'responsibility',
+  'environmental', 'characteristic', 'misunderstanding', 'pronunciation',
+  'entrepreneur', 'collaboration', 'sophisticated', 'architecture',
+  'determination', 'opportunity', 'concentration', 'transformation',
+  'independence', 'relationship', 'achievement', 'temperature', 'experience',
+  'knowledge', 'challenge', 'technique', 'structure', 'language', 'practice',
+]
+
+export const QUOTES = [
+  { text: 'The quick brown fox jumps over the lazy dog.', author: 'Pangram' },
+  { text: 'Simplicity is the ultimate sophistication.', author: 'Leonardo da Vinci' },
+  { text: 'It always seems impossible until it is done.', author: 'Nelson Mandela' },
+  { text: 'The only way to do great work is to love what you do.', author: 'Steve Jobs' },
+  { text: 'Whether you think you can or you think you cannot, you are right.', author: 'Henry Ford' },
+  { text: 'In the middle of difficulty lies opportunity.', author: 'Albert Einstein' },
+  { text: 'The journey of a thousand miles begins with a single step.', author: 'Lao Tzu' },
+  { text: 'Success is not final, failure is not fatal: it is the courage to continue that counts.', author: 'Winston Churchill' },
+  { text: 'Talk is cheap. Show me the code.', author: 'Linus Torvalds' },
+  { text: 'Programs must be written for people to read, and only incidentally for machines to execute.', author: 'Harold Abelson' },
+  { text: 'Any sufficiently advanced technology is indistinguishable from magic.', author: 'Arthur C. Clarke' },
+  { text: 'The best time to plant a tree was twenty years ago. The second best time is now.', author: 'Chinese Proverb' },
+  { text: 'You miss one hundred percent of the shots you do not take.', author: 'Wayne Gretzky' },
+  { text: 'The future belongs to those who believe in the beauty of their dreams.', author: 'Eleanor Roosevelt' },
+  { text: 'Do not watch the clock. Do what it does. Keep going.', author: 'Sam Levenson' },
+  { text: 'Quality is not an act, it is a habit.', author: 'Aristotle' },
+  { text: 'The secret of getting ahead is getting started.', author: 'Mark Twain' },
+  { text: 'A ship in harbor is safe, but that is not what ships are built for.', author: 'John A. Shedd' },
+  { text: 'What we know is a drop, what we do not know is an ocean.', author: 'Isaac Newton' },
+  { text: 'Stay hungry, stay foolish.', author: 'Stewart Brand' },
+]
+
+export const PARAGRAPHS = [
+  'Typing is a physical skill before it is a mental one. Your fingers learn patterns the same way a musician learns scales: slowly at first, then with growing confidence. The trick is not to force speed. Sit tall, relax your shoulders, and let each keystroke land cleanly. Accuracy builds the map, and speed follows the map.',
+  'The home row is the center of everything. Your index fingers rest on F and J, where small bumps guide you home without looking. From there, every other key is a short reach away. Return to home after each reach, and your hands will always know where they are, even in the middle of a long paragraph.',
+  'A good typing test is not a race against the clock. It is a conversation between your eyes and your hands. Read a little ahead, keep a steady rhythm, and let mistakes go. Chasing a single wrong character usually costs more time than moving on. The goal is a clean line, not a perfect one.',
+  'Deep practice means paying attention to the mistakes you make most often. If you notice the same letter tripping you up, slow down and repeat it deliberately. Ten focused repetitions beat a hundred careless ones. Progress is not always visible day to day, but it is always accumulating in the background.',
+  'Posture matters more than most people think. Keep your feet flat, your back supported, and your elbows close to your body. The keyboard should sit just below elbow height. Take a short break every twenty minutes, look at something far away, and let your hands rest. Comfort is not a luxury; it is how you last.',
+  'The best typists look calm because they are not fighting the keyboard. Their hands move in small, efficient arcs. Their eyes stay a few words ahead. When they make a mistake, they fix it and move on without a pause. That calm is not a talent. It is what remains after the nervous energy has been practiced away.',
+  'Language has a rhythm, and typing has a rhythm too. Common pairs like TH and HE blur into single motions. Whole words become shapes under your fingers. Once you stop spelling words letter by letter, your speed jumps. The secret is repetition with attention, so that the pattern is stored cleanly the first time.',
+  'Technology changes quickly, but the keyboard has stayed remarkably stable. For more than a century, people have pressed keys in roughly the same arrangement. Learning to use it well is still one of the highest-return skills in knowledge work. A few minutes a day is enough to turn a bottleneck into something you never notice.',
+  'Accuracy is a habit, not a setting. Every time you accept a sloppy keystroke, you teach your hands that sloppiness is acceptable. Every time you slow down and hit the right key, you teach them the opposite. Over weeks, those small lessons compound into a completely different experience at the keyboard.',
+  'There is a quiet pleasure in doing a simple thing well. The keys click, the line advances, the words appear exactly as intended. It is a small craft, but it is yours. Practice it with care, and it will quietly give you back hours of your life, one clean sentence at a time.',
+]
+
+export const CODE_SNIPPETS = [
+  'const greet = (name) => `Hello, ${name}!`;',
+  'function sum(a, b) {\n  return a + b;\n}',
+  'items.filter((item) => item.active).map((item) => item.name);',
+  'if (user && user.isAdmin) {\n  grantAccess(user);\n}',
+  'const config = { host: "localhost", port: 8080, debug: true };',
+  'for (let i = 0; i < list.length; i++) {\n  total += list[i];\n}',
+  'async function load() {\n  const res = await fetch("/api/data");\n  return res.json();\n}',
+  'def add(a, b):\n    return a + b',
+  'names = [user.name for user in users if user.active]',
+  'SELECT name, email FROM users WHERE active = 1 ORDER BY name;',
+  'git commit -m "fix: handle empty input"',
+  'npm run build && npm run preview',
+]
+
+export const TYPING_TIPS = [
+  'Keep your eyes on the screen — not on your hands.',
+  'Accuracy first. Speed is a by-product of clean repetition.',
+  'Return every finger to the home row after a reach.',
+  'Relax your shoulders and let your wrists float.',
+  'Read two or three words ahead of the cursor.',
+  'Take a 20-second break every few minutes to reset.',
+  'Use the opposite Shift key from the hand typing the letter.',
+  'If you make a mistake, correct it calmly — do not rush the fix.',
+]

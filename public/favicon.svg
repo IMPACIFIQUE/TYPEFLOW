@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="TypeFlow">
+  <defs>
+    <linearGradient id="tf" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D4AFF" />
+      <stop offset="1" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#tf)" />
+  <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.4">
+    <rect x="12" y="18" width="40" height="28" rx="6" />
+    <path d="M20 27h.01M28 27h.01M36 27h.01M44 27h.01M20 35h.01M28 35h.01M36 35h.01M44 35h.01M24 42h16" />
+  </g>
+</svg>
