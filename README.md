@@ -1,80 +1,32 @@
 # TypeFlow
 
-TypeFlow is a local-first typing school built with React and Vite. It pairs guided lessons and drills with live WPM/accuracy analytics, a virtual keyboard with finger guidance, typing games, daily challenges and per-account progress.
+A typing school built with React and Vite. Learn to type with guided lessons, practice drills, typing games and live speed (WPM) and accuracy tracking. Everything runs in the browser, so it works offline with no backend.
 
-Everything runs in the browser. Accounts, settings and progress are stored in `localStorage`, so the app works offline and needs no backend.
+## Features
 
-## Quick start
+- 30 guided lessons from home row to speed and endurance
+- Practice room and typing tests
+- Virtual keyboard with finger guidance (QWERTY, Dvorak, Colemak)
+- Word Rain game and daily challenges
+- Progress analytics and 28 achievements
+- Local accounts, guest mode and light/dark theme
 
-```bash
-npm install
-npm run dev
-```
+## Run it
 
-Open the printed local URL (usually `http://localhost:5173`).
+    npm install
+    npm run dev
 
-### Production build
+Open http://localhost:5173.
 
-```bash
-npm run build
-npm run preview
-```
+## Build
 
-## What is inside
-
-- **30 guided lessons** across home row, top/bottom rows, capitals, punctuation, numbers, speed and endurance tracks.
-- **Typing engine** with strict/soft error modes, backspace, timed and fixed-length tests, per-key stats and live WPM samples.
-- **Virtual keyboard** for QWERTY, Dvorak and Colemak layouts, with next-key and hand guidance.
-- **Practice room** with passages, random words, punctuation and numbers.
-- **Analytics** with speed trends, activity heatmap, weak keys, personal bests, filters and session history.
-- **28 achievements** with tiers, progress bars and unlock tracking.
-- **Games and challenges**, including Word Rain and date-seeded daily challenges.
-- **Local accounts** with separate progress per profile, guest mode, profile editing and a read-only local admin dashboard.
-- **Settings** for theme, caret, font size, layout, sound, keyboard visibility, daily goal and test defaults.
-- **Light/dark design system** driven by CSS tokens, with responsive layouts and reduced-motion support.
-
-## Routes
-
-| Route | Page |
-| --- | --- |
-| `/` | Home |
-| `/lessons` | Lesson library |
-| `/lessons/:id` | Lesson runner |
-| `/practice` | Practice room |
-| `/test` | Typing test |
-| `/games` | Word Rain |
-| `/challenges` | Daily and timed challenges |
-| `/progress` | Analytics dashboard |
-| `/achievements` | Achievement gallery |
-| `/profile` | Profile and local auth |
-| `/settings` | Preferences |
-| `/admin` | Local account overview |
-| `*` | Not found |
+    npm run build
+    npm run preview
 
 ## Stack
 
-- React 19 + Vite 8
-- React Router
-- Lucide icons
-- Oxlint
-- Plain CSS with custom properties (`src/styles/`)
+React, Vite, React Router, Lucide icons, plain CSS
 
-## Project layout
+## Note
 
-```text
-src/
-  components/   shared UI, keyboard and typing components
-  context/      settings, auth and progress providers
-  data/         lessons, passages, exercises and achievements
-  hooks/        typing engine, timer, stats, sound and session recording
-  pages/        route-level pages (lazy loaded except Home)
-  services/     localStorage adapter, auth, lessons and progress APIs
-  styles/       design tokens and page styles
-  utils/        formatting, calculations, keyboard/finger mappings
-```
-
-## Notes
-
-- Passwords for local accounts are encoded for demo purposes only. This is not production authentication.
-- Data belongs to the browser origin. Clearing site data removes accounts and progress.
-- The admin page is intentionally read-only and only sees accounts stored in the same browser.
+Progress is saved in your browser (localStorage). Local account passwords are for demo only, not real security.
